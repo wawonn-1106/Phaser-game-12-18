@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Phaser</title>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    </head>
+    <body>
+        <div id="game-container">
+            <div id="inventory-ui" style="
+                position:absolute;
+                top:10px;
+                right:10px;
+                width:300px;
+                background:rgb(0,0,0,7);
+                color:white;
+                padding:10px;
+                font-family:sans-serif;
+                display:none;
+            ">
+                <h3>資産状況</h3>
+                <p>所持金：<span id="gold-display">0</span></p>
+                <hr>
+                <h4>持ち物</h4>
+                <ul id="item-list" style="list-style:none; padding:0;"></ul>
+            </div>
+            <div id="dialog-window">
+                <div id="dialog-name-container">
+                    <span id="dialog-name">---</span>
+                </div>
+
+                <div id="dialog-body">
+                    <p id="dialog-text"></p>
+                </div>
+                <div class="next-indicater">▼</div>
+            </div>
+        </div>
+        
+        <script type="module" src="MyGame.js"></script>
+    </body>
+</html>
